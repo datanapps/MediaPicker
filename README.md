@@ -9,7 +9,7 @@
 
 ## Media Picker for Camera & Gallery
 
-public class MainActivity extends AppCompatActivity {
+    public class MainActivity extends AppCompatActivity {
 
     private ImageView  imageView;
     String imageFilePath;
@@ -97,5 +97,28 @@ public class MainActivity extends AppCompatActivity {
             imageView.setImageURI(uri);
         }
 
-    }
-}
+    }}
+    
+    
+    
+    
+## File Provider :: 
+    
+     <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        
+        
+## Provider Path : 
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <paths xmlns:android="http://schemas.android.com/apk/res/android">
+        <external-path name="external_files" path="."/>
+    </paths>
+        
