@@ -102,7 +102,7 @@
     
     
     
-## File Provider :: 
+## File Provider : 
     
      <provider
             android:name="androidx.core.content.FileProvider"
