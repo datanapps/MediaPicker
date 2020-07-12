@@ -24,25 +24,26 @@
 
 
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/fabCamera"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="100dp"
-      android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="150dp"
+            android:text="Camera"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
 
 
 
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/fabGallery"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="50dp"
+        android:text="Gallery"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
 
 
